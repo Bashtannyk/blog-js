@@ -1,0 +1,61 @@
+#menu {
+    max-width: 800px;
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 15px;
+    display: block;
+}
+
+
+body, ul {
+    padding: 0;
+    margin: 0;
+}
+
+/*menu*/
+
+.drop {
+    position: relative;
+}
+
+.drop ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #000000ab;
+}
+
+.drop ul li a {
+    text-transform: none !important;
+    white-space: nowrap;
+}
+
+.drop ul li:hover a {
+    text-decoration: underline !important;
+}
+
+.drop:hover ul {
+    display: block;
+}
+
+#menu > li > a {
+    border: 2px solid black;
+}
+
+#menu > li:hover > a {
+    background:grey;
+    transition: 0.5s;
+}
