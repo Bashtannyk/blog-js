@@ -20,7 +20,18 @@ ar.forEach(product => {
     wrap.onclick = function () {
         const id = +this.dataset.productId;
         const product = ar.find(p => p.id === id);
-        console.log();
+        
+        const wrap = document.createElement('div');
+        wrap.className = 'cart-product';
+        
+        const h2 = document.createElement('h2');
+        h2.innerHTML = product.name;
+        
+        wrap.appendChild(h2);
+
+        cart.appendChild(wrap);
+
+        console.log(id);
     }
 
     wrap.dataset.productId = product.id;
