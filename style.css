@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 #menu {
     max-width: 800px;
     margin: 15px auto;
@@ -58,4 +61,22 @@ body, ul {
 #menu > li:hover > a {
     background:grey;
     transition: 0.5s;
+}
+
+#list-posts {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#list-posts .post {
+    width: 230px;
+    margin: 15px;
+    border: 1px solid #ccc !important;
+    padding: 15px;
+    text-align: center;
+
 }

@@ -1,0 +1,28 @@
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin:auto;
+}
+
+.product {
+    width: 150px;
+    border: 2px solid black;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.product h2 {
+    display: block;
+    text-align: center;
+}
+
+#cart {
+    border: 2px solid green;
+    min-height: 200px;
+    padding: 5px;
+    max-width: 1000px;
+    margin: 15px auto;
+    box-sizing: border-box;
+}
